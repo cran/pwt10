@@ -10,7 +10,7 @@ bibentry("Manual",
          year         = year,
          note         = note,
 	 url          = "https://CRAN.R-project.org/package=pwt10",
-	 header = "When using pwt10 in publications, please cite both the pwt10 package and the Penn World Table itself:"
+	 header = "When using pwt10 in publications, please cite both the pwt10 package (released under the GPL) and the Penn World Table itself (released under the CC-BY):"
 )
 
 bibentry("Article",
@@ -23,6 +23,5 @@ bibentry("Article",
 	 volume       = "105",
 	 number       = "10",
 	 pages        = "3150--3182",
-         url          = "http://www.ggdc.net/pwt/",
 	 header = "To cite the Penn World Table (version 10.x), please use:"
 )

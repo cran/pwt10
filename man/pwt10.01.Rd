@@ -1,13 +1,13 @@
-\name{pwt10.0}
-\alias{pwt10.0}
-\title{Penn World Table 10.0}
+\name{pwt10.01}
+\alias{pwt10.01}
+\title{Penn World Table 10.01}
 
 \description{
   Relative levels of income, output, input, and productivity for
   183 countries between 1950 and 2019 (base year: 2017).
 }
 
-\usage{data("pwt10.0")}
+\usage{data("pwt10.01")}
 
 \format{A data frame with 12,810 observations of 52 variables.
   \describe{
@@ -40,9 +40,9 @@
     \item{irr}{Real internal rate of return.}
     \item{delta}{Average depreciation rate of the capital stock.}
     \item{xr}{Exchange rate, national currency/USD (market and estimated).}
-    \item{pl_con}{Price level of CCON (PPP/XR, price level of USA GDPo in 2017 = 1).}
-    \item{pl_da}{Price level of CDA (PPP/XR, price level of USA GDPo in 2017 = 1).}
-    \item{pl_gdpo}{Price level of CGDPo (PPP/XR, price level of USA GDPo in 2017 = 1).}
+    \item{pl_con}{Price level of CCON (PPP/XR), price level of USA GDPo in 2017 = 1.}
+    \item{pl_da}{Price level of CDA (PPP/XR), price level of USA GDPo in 2017 = 1.}
+    \item{pl_gdpo}{Price level of CGDPo (PPP/XR), price level of USA GDPo in 2017 = 1.}
     \item{i_cig}{Factor indicating whether relative price data for consumption, investment, and government is extrapolated, benchmark, interpolated, ICP PPP timeseries: benchmark or interpolated, or ICP PPP timeseries: extrapolated.}
     \item{i_xm}{Factor indicating whether relative price data for exports and imports is extrapolated, benchmark, or interpolated.}
     \item{i_xr}{Factor indicating whether the exchange rate is market-based or estimated.}
@@ -67,22 +67,26 @@
 }
 
 \details{
-  The Penn World Table (version 10.0) is a database with information on
+  The Penn World Table (version 10.01) is a database with information on
   relative levels of income, output, input, and productivity, covering 183 countries
   between 1950 and 2019. It is provided at \url{https://www.rug.nl/ggdc/productivity/pwt/}
   under the Creative Commons Attribution License (CC-BY), see Feenstra, Inklaar, and Timmer
-  (2021, 2015) for more details. Version 10.0 represents the
-  fifth release since the switch to the \emph{Next Generation of the Penn World Table}
+  (2021, 2015) for more details. Version 10.01 is a minor revision of the previous version 10.0,
+  which represents the fifth major release since the switch to the \emph{Next Generation of the Penn World Table}
   of PWT versions 8.0 and 8.1 (see Feenstra, Inklar, and Timmer 2015),
   followed by version 9.0 and 9.1. Section I of Feenstra et al. (2015) is still the
   recommended starting point as the main structure of the database and definition
-  of its variables are unchanged in PWT 10.0. Nevertheless Version 10.0 contains
-  important new and revised data.
+  of its variables are unchanged in PWT 10.01.
+  
+  The changes in version 10.01 relate to the calculation of investment deflators and primarily
+  affect the \code{*na} variables for capital and TFP, i.e., those primarily designed to capture
+  growth over time.
 }
 
 \source{
-  Penn World Table 10.0,
-  \doi{10.15141/S5Q94M}.
+  Groningen Growth and Development Centre (2023).
+  Penn World Table 10.01, DataverseNL.
+  \doi{10.34894/QT5BCC}.
 }
 
 \references{
